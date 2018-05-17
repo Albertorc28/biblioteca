@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+	<h1>Listado de autores</h1>
+	<ul>
+	    {% for autor in vectorautores %}
+	        <li>{{ autor.nombre }}</li>
+	    {% endfor %}
+	</ul>
+	<a href="{{ path('autor_nuevo')}}">Añadir autor</a>
+	<a href="{{ path('libro_nuevo')}}">Añadir libro</a>
+
+	<button type="button" class="btn btn-primary">cambiar color</button>
+	
+{% endblock %}
+
+
