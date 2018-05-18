@@ -16,6 +16,12 @@
 	<a href="{{ path('libro_nuevo')}}">Añadir libro</a>
 
 	<button type="button" class="btn btn-primary">cambiar color</button>
+	<!-- Button trigger modal -->
+<button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button>
+
+{% include 'autor/modal.html.twig' %}
 	
 {% endblock %}
 
